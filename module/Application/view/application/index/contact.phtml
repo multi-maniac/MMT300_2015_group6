@@ -1,0 +1,187 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <?php echo $this->headTitle('PPSPTP ')?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                ->prependStylesheet($this->basePath() . '/css/stylesheet.css')
+                ->prependStylesheet($this->basePath() . '/css/responsive.css')
+                ->prependStylesheet($this->basePath() . '/css/slider.min.css')
+        ?>
+        <?php
+        echo $this->headScript()
+                ->prependFile($this->basePath() . '/js/myscript.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                ->prependFile($this->basePath() . '/js/slider.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+        ;
+        ?>
+
+        <!-- Scripts -->
+
+    </head>
+    <body>
+               <nav>
+            
+            <div class="container">
+                        <a href="<?php echo $this->url('home') ?>"><img class="logo" src="images/logo.png"/></a>
+                <h4 class="reg_log"><a href="<?php echo $this->url('register') ?>"><?php echo $this->translate('REGISTER') ?></a>  |  <a href="<?php echo $this->url('login') ?>"><?php echo $this->translate('LOGIN') ?></a></h4>
+                <div class="clear"/>
+            </div>
+                <div id="nav">
+    <div id="nav_wrapper">
+            <div class="container">
+                <ul class="navigation">
+                    <li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                    <li><a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('About') ?></a>
+                        <ul>
+                            <li class="active"><a href="<?php echo $this->url('howtoknow') ?>"><?php echo $this->translate('How to know') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('comingout') ?>"><?php echo $this->translate('Coming out') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('behappy') ?>"><?php echo $this->translate('Be happy') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('respect') ?>"><?php echo $this->translate('Respect') ?></a></li>
+                            </li>
+                           <li class="active"><a href="<?php echo $this->url('transition') ?>"><?php echo $this->translate('Transition') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('resources') ?>"><?php echo $this->translate('Resources') ?></a></li>
+                            <li class="active"><a href="<?php echo $this->url('bootstrap') ?>"><?php echo $this->translate('Bootstrap') ?></a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    </li>
+                    
+                    
+                    <li class="active"><a href="<?php echo $this->url('service') ?>"><?php echo $this->translate('Services') ?></a></li>
+                    <li class="active"><a href="<?php echo $this->url('members') ?>"><?php echo $this->translate('Members') ?></a></li>
+                <li><a href="<?php echo $this->url('contact') ?>"><?php echo $this->translate('Contact') ?></a></li>
+                </ul>
+                <div class="clear"/>
+            </div>
+            </div></div>
+        </nav>
+
+        <header>
+		<div class="container">
+			<img class="contact_message" src="images/contact_message.png"/>
+		</div>
+		</header>
+        <div class="container">
+		<section class="sec_one">
+		<?php
+ $form = $this->form;
+ $form->prepare();
+ 
+ $form->get('name')->setAttributes(array(
+ 'class'=>'form-control',
+'placeholder'=>'Your name here'
+ ));
+ 
+ $form->get('email')->setAttributes(array(
+ 'class'=>'form-control',
+'placeholder'=>'name@example.com'
+ ));
+
+ $form->get('subject')->setAttributes(array(
+ 'class'=>'form-control',
+ 'placeholder'=>'Type subject here'
+ ));
+
+ $form->get('body')->setAttributes(array(
+ 'class'=>'form-control',
+ 'rows'=>6,
+ 'placeholder'=>'Type message text here'
+ ));
+
+ 
+ $form->get('submit')->setAttributes(array('class'=>'btn btn-primary'));
+ ?>
+<div >
+
+ <?php echo $this->form()->openTag($form); ?>
+
+ <div class="form-group">
+ <?php echo $this->formLabel($form->get('name')); ?>
+ <?php echo $this->formElement($form->get('name')); ?>
+ <?php echo $this->formElementErrors($form->get('name')); echo "<br/>"?>
+ </div>
+    
+ <div class="form-group">
+ <?php echo $this->formLabel($form->get('email')); ?>
+ <?php echo $this->formElement($form->get('email')); ?>
+ <?php echo $this->formElementErrors($form->get('email')); echo "<br/>"?>
+ </div>
+    
+ <div class="form-group">   
+ <?php echo $this->formLabel($form->get('subject')); ?>
+ <?php echo $this->formElement($form->get('subject')); ?>
+ <?php echo $this->formElementErrors($form->get('subject')); echo "<br/>"?>
+</div>
+    
+ <div class="form-group">
+ <?php echo $this->formLabel($form->get('body')); ?>
+ <?php echo $this->formElement($form->get('body')); ?>
+ <?php echo $this->formElementErrors($form->get('body')); echo "<br/>"?>
+</div>
+    
+ <?php echo $this->formElement($form->get('csrf')); ?>
+       </div>
+
+       <div class="form-group">
+           <?php echo $this->formLabel($form->get('captcha')); ?>
+           <br>
+           <?php echo $this->formElement($form->get('captcha')); ?>
+           <br>
+           <?php echo $this->formElementErrors($form->get('captcha')); ?>
+           <br>
+           <p class="help-block">Enter the letters above as you see them.</p>
+       </div>   
+
+ <div class="form-group">
+ <?php echo $this->formElement($form->get('submit')); echo "<br/>"?>
+
+<?php echo $this->form()->closeTag(); ?>  
+</div>
+</div>
+                    </section>
+		<footer>
+			<div class="container">
+				<div class="col_footer_left">
+					<h3>JOIN OUR NEWSLETTER</h3>
+					<button><a class="white" href="<?php echo $this->url('register') ?>"><?php echo $this->translate('SIGN-UP FOR NEWLETTER') ?></a></button>
+				</div>
+				<div class="col_footer_middle">
+					<h3 class="dt_num3">SERVICE TIMES</h3>
+					<dl>
+						<dt class="dt_num2">Sundays at 9:30 & 11:30AM</dt>
+						<dd class="dt_num3">Human Rights Organisation</dd>
+					</dl>
+				</div>
+				<div class="col_footer_right">
+					<h3>CONNECT WITH US</h3>
+						<div class="socail_media">
+							<a target = "_blank"href="https://www.facebook.com/pages/Protea-Psychosocial-Project-for-Trans-People/1613032075611085?fref=ts"><img class="facebook" src='images/facebook.png' width='' height='' onmouseover="this.src='images/facebookhover.png';" onmouseout="this.src='images/facebook.png';" /></a>
+							<a target = "_blank"href="https://twitter.com/ppsptp"><img class="twitter" src='images/twitter.png' width='' height='' onmouseover="this.src='images/twitterhover.png';" onmouseout="this.src='images/twitter.png';" /></a>
+							<a target = "_blank" href="#"><img class="youtube" src='images/youtube.png' width='' height='' onmouseover="this.src='images/youtubehover.png';" onmouseout="this.src='images/youtube.png';" /></a>
+							<a href="<?php echo $this->url('contact') ?>"><img class="email" src='images/email.png' width='' height='' onmouseover="this.src='images/emailhover.png';" onmouseout="this.src='images/email.png';" /></a>
+						</div>
+				</div>
+											<div class="clear"/>
+				</div>
+				<hr class="hr"/><br/>
+				<p class="copy">&copy; Copyright 2015. All Rights Reserved. Privacy Policy</p>
+		</footer>
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="js/myscripts.js"></script>
+	</body>
+</html>

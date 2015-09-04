@@ -1,0 +1,153 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('PPSPTP ')?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                ->prependStylesheet($this->basePath() . '/css/stylesheet.css')
+                ->prependStylesheet($this->basePath() . '/css/responsive.css')
+                ->prependStylesheet($this->basePath() . '/css/slider.min.css')
+        ?>
+        <?php
+        echo $this->headScript()
+                ->prependFile($this->basePath() . '/js/myscript.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                ->prependFile($this->basePath() . '/js/slider.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+        ;
+        ?>
+
+        <!-- Scripts -->
+
+    </head>
+    <body>
+               <nav>
+            
+            <div class="container">
+                        <a href="<?php echo $this->url('home') ?>"><img class="logo" src="images/logo.png"/></a>
+                <h4 class="reg_log"><a href="<?php echo $this->url('register') ?>"><?php echo $this->translate('REGISTER') ?></a>  |  <a href="<?php echo $this->url('login') ?>"><?php echo $this->translate('LOGIN') ?></a></h4>
+                <div class="clear"/>
+            </div>
+                <div id="nav">
+    <div id="nav_wrapper">
+            <div class="container">
+                <ul class="navigation">
+                    <li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                    <li><a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('About') ?></a>
+                        <ul>
+                            <li class="active"><a href="<?php echo $this->url('howtoknow') ?>"><?php echo $this->translate('How to know') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('comingout') ?>"><?php echo $this->translate('Coming out') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('behappy') ?>"><?php echo $this->translate('Be happy') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('respect') ?>"><?php echo $this->translate('Respect') ?></a></li>
+                            </li>
+                           <li class="active"><a href="<?php echo $this->url('transition') ?>"><?php echo $this->translate('Transition') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('resources') ?>"><?php echo $this->translate('Resources') ?></a></li>
+                            <li class="active"><a href="<?php echo $this->url('bootstrap') ?>"><?php echo $this->translate('Bootstrap') ?></a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    </li>
+                    
+                    
+                    <li class="active"><a href="<?php echo $this->url('service') ?>"><?php echo $this->translate('Services') ?></a></li>
+                    <li class="active"><a href="<?php echo $this->url('members') ?>"><?php echo $this->translate('Members') ?></a></li>
+                <li><a href="<?php echo $this->url('contact') ?>"><?php echo $this->translate('Contact') ?></a></li>
+                </ul>
+                <div class="clear"/>
+            </div>
+            </div></div>
+        </nav>
+        <header>
+			<img class="banner" src="images/banner_howto.jpg"/>
+		</header>
+		<section>
+			<div class="container">
+				<div class="col_left_co"><br/>
+						<h3 class="blue research_header">MOVE FORWARD</h3>
+						<p>
+							If you identify more with a gender that you were not assigned, then the sooner you accept this fact, the sooner you can move forward. 
+							Whether this means transitioning or just accepting who you are, there are many steps that you can take to feel better about the way you identify or the way you present. 
+							Get prepared for some soul searching and know that you will come out stronger on the other side.
+						</p>
+					<hr class="links_hr"/>	
+						<h3 class="blue research_header">BE PATIENT</h3>
+							<p>
+							It can take a lot of time to know if you are really transgender or not. If you feel that you are "late" or "too old" to be trans, you aren't. 
+							There are people out there who didn't realize they are trans* (or were in a denial) until they were in their 30's, 40's, or even 50's. Remember this isn't a race; it is about self-realization. Learning about yourself is part of the first steps of feeling peace in mind. 
+							</p>
+							<hr class="links_hr"/>
+						<h3 class="blue research_header">UNDERSTAND WHAT IT MEANS TO BE TRANS*</h3>
+							<p class="last_p">
+								Being trans* doesn't mean you'll have a restricted life. You might see TV talk shows where trans* people say they knew at an early age, and they are interested in what cisgender people are expected to be into. 
+								Understand that not all trans* people had completely known at a very young age nor have they always been interested in the traditional gender expectations. It's okay that when you were little you liked wearing dresses, playing with action figures, or played with jump-ropes.<br/><br/>
+								Remember that things like clothes and picking out toys are just expressions, and not the signs of one's gender. Think about this: why is it okay for cisgender people to express androgynously? For example, why is it okay for a cisgender girl to be sporty and outspoken but not okay for a trans* girl to do the same, in spite of traditional gender roles? Gender expression and gender identity are not the same thing.
+								Being trans* doesn't mean you are gay or straight. Gender and sexuality are two different, separate parts of one's identity. Sexual orientation is who you are sexually attracted to, and gender identity is an internal sense of gender. It's not rare or irrational to be homosexual and trans*. <br/><br/>
+								There are many trans* people who are gay, bisexual, pansexual, or asexual. It actually wouldn't make any sense for all trans* people to be in a heterosexual relationship while cisgender people can be any sexual orientation. Homosexual men and women are still cisgender people because they see themselves as what gender they were assigned as at birth. 
+								When people call heterosexual trans* people "gay people", it sounds more like they are saying being trans* is a way of continuing the "ideal and heteronormative persona", like it's "fake" or a "trick" to remain part of the "average" group. It isn't about looking attractive or "normal" for others to see, it's about one's happiness and freedom.. 
+							</p><br/><br/>
+				</div>
+				<div class="col_right_co"><br/>
+					<h3 class="pink research_header">ACCEPT YOURSELF</h3><br/>
+						<p>
+							Learn to accept and love who you are. It's your right to express or question yourself in whatever ways you see fit. 
+							It's important for you to listen what you feel and not what people say you should feel. If you choose not to question your gender identity because you are worried of people's opinions, you could make your life worse just by not listening to yourself and always letting people get to you.
+							You must remember that you have only a single life and you cannot let your life end with full of regrets or what ifs.
+						</p>
+						<br/>
+					<div class="tips_co">
+						<h3 class="research_header pink">SEE A GENDER THERAPIST</h3><br/>
+						<p>
+							Although they cannot decide what gender you truly are, they can guide you on your journey. 
+							Having a good therapist can really improve one's life. 
+							Simply letting out what you feel by talking can already help you out on figuring out your identity. It's important to ask questions and analyze why you feel this way. 
+							Be careful and selective when choosing a gender therapist. Ask trans* people you know if there is a therapist they recommend. The wrong ones will waste your time and money. 
+						</p>
+					</div>
+				</div>
+				<div class="clear">
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="col_footer_left">
+					<h3>JOIN OUR NEWSLETTER</h3>
+					<button><a class="white" href="<?php echo $this->url('register') ?>"><?php echo $this->translate('SIGN-UP FOR NEWLETTER') ?></a></button>
+				</div>
+				<div class="col_footer_middle">
+					<h3 class="dt_num3">SERVICE TIMES</h3>
+					<dl>
+						<dt class="dt_num2">Sundays at 9:30 & 11:30AM</dt>
+						<dd class="dt_num3">Human Rights Organisation</dd>
+					</dl>
+				</div>
+				<div class="col_footer_right">
+					<h3>CONNECT WITH US</h3>
+						<div class="socail_media">
+							<a target = "_blank"href="https://www.facebook.com/pages/Protea-Psychosocial-Project-for-Trans-People/1613032075611085?fref=ts"><img class="facebook" src='images/facebook.png' width='' height='' onmouseover="this.src='images/facebookhover.png';" onmouseout="this.src='images/facebook.png';" /></a>
+							<a target = "_blank"href="https://twitter.com/ppsptp"><img class="twitter" src='images/twitter.png' width='' height='' onmouseover="this.src='images/twitterhover.png';" onmouseout="this.src='images/twitter.png';" /></a>
+							<a target = "_blank" href="#"><img class="youtube" src='images/youtube.png' width='' height='' onmouseover="this.src='images/youtubehover.png';" onmouseout="this.src='images/youtube.png';" /></a>
+							<a href="<?php echo $this->url('contact') ?>"><img class="email" src='images/email.png' width='' height='' onmouseover="this.src='images/emailhover.png';" onmouseout="this.src='images/email.png';" /></a>
+						</div>
+				</div>
+											<div class="clear"/>
+				</div>
+				<hr class="hr"/><br/>
+				<p class="copy">&copy; Copyright 2015. All Rights Reserved. Privacy Policy</p>
+		</footer>
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="js/myscripts.js"></script>
+	</body>
+</html>

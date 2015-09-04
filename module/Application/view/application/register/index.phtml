@@ -1,0 +1,167 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('PPSPTP ' ) ?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                ->prependStylesheet($this->basePath() . '/css/stylesheet.css')
+                ->prependStylesheet($this->basePath() . '/css/responsive.css')
+                ->prependStylesheet($this->basePath() . '/css/slider.min.css')
+        ?>
+
+        <!-- Scripts -->
+
+    </head>
+    <body>
+         <nav>
+            
+            <div class="container">
+                        <a href="<?php echo $this->url('home') ?>"><img class="logo" src="/images/logo.png"/></a>
+                <h4 class="reg_log"><a href="<?php echo $this->url('register') ?>"><?php echo $this->translate('REGISTER') ?></a>  |  <a href="<?php echo $this->url('login') ?>"><?php echo $this->translate('LOGIN') ?></a></h4>
+                <div class="clear"/>
+            </div>
+                <div id="nav">
+    <div id="nav_wrapper">
+            <div class="container">
+                <ul class="navigation">
+                    <li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                    <li><a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('About') ?></a>
+                        <ul>
+                            <li class="active"><a href="<?php echo $this->url('howtoknow') ?>"><?php echo $this->translate('How to know') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('comingout') ?>"><?php echo $this->translate('Coming out') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('behappy') ?>"><?php echo $this->translate('Be happy') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('respect') ?>"><?php echo $this->translate('Respect') ?></a></li>
+                            </li>
+                           <li class="active"><a href="<?php echo $this->url('transition') ?>"><?php echo $this->translate('Transition') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('resources') ?>"><?php echo $this->translate('Resources') ?></a></li>
+                            <li class="active"><a href="<?php echo $this->url('bootstrap') ?>"><?php echo $this->translate('Bootstrap') ?></a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    </li>
+                    
+                    
+                    <li class="active"><a href="<?php echo $this->url('service') ?>"><?php echo $this->translate('Services') ?></a></li>
+                    <li class="active"><a href="<?php echo $this->url('members') ?>"><?php echo $this->translate('Members') ?></a></li>
+                <li><a href="<?php echo $this->url('contact') ?>"><?php echo $this->translate('Contact') ?></a></li>
+                </ul>
+                <div class="clear"/>
+            </div>
+            </div></div>
+        </nav>
+        
+ <div class="container">
+    <h3 class="blue">Register and stay up to date with our community</h3><br/><br/>
+	<div class="left_side_col">
+		<img class="img_float_left" src="/images/register_collage.jpg" width="320" height="222">
+	</div>
+    <?php if ($this->error): ?>
+        <p class="error">
+            There were one or more issues with your submission.
+            Please correct them as
+            indicated below.
+        </p>
+    <?php endif ?>
+
+    <?php
+    $form = $this->form;
+    $form->prepare();
+    $form->setAttribute('action', $this->url(NULL, array('controller' => 'Register', 'action' => 'process')));
+    $form->setAttribute('method', 'post');
+    echo $this->form()->openTag($form);
+    ?>
+    <dl class="zend_form">
+        
+         
+        <dt ><?php echo $this->formLabel($form->get('name')); ?></dt>
+        <dd><?php echo $this->formElement($form->get('name'));
+        echo $this->formElementErrors($form->get('name'));?></dd>
+      
+        
+       
+        <dt ><?php echo $this->formLabel($form->get('email')); ?></dt>
+        <dd ><?php
+            echo $this->formElement($form->get('email'));
+            echo $this->formElementErrors($form->get('email'));
+            ?></dd>
+       
+        
+        <dt ><?php echo $this->formLabel($form->get('password'));
+    ?></dt>
+        <dd ><?php
+            echo $this->formElement($form->get('password'));
+            echo $this->formElementErrors($form->get('password'));
+    ?></dd>
+       
+        <dt ><?php echo $this->formLabel($form->get('confirm_password')); ?></dt>
+        <dd ><?php
+            echo $this->formElement($form->get('confirm_password'));
+            echo $this->formElementErrors($form->get('confirm_password'));
+    ?></dd>
+        
+        <?php echo $this->formElement($form->get('csrf')); ?>
+       
+
+       
+          <dt > <?php echo $this->formLabel($form->get('captcha')); ?></dt >
+           <br>
+           <dd ><?php echo $this->formElement($form->get('captcha')); ?>
+           <br>
+           <?php echo $this->formElementErrors($form->get('captcha')); ?>
+           <br>
+           <p class="help-block">Enter the letters above as you see them.</p></dd >
+          
+        <div class="clearing"></div>
+        <dd class="form-area"><?php
+            echo $this->formElement($form->get('submit'));
+            echo $this->formElementErrors($form->get('submit'));
+            
+    ?></dd><br/><br/><br/>
+      <a href="<?php echo $this->url('login') ?>"><?php echo $this->translate('Already registered?') ?></a>
+    </dl>
+    <?php echo $this->form()->closeTag() ?>
+</div><br/><br/>
+        
+      <footer>
+            <div class="container">
+                <div class="col_footer_left">
+                    <h3>JOIN OUR NEWSLETTER</h3>
+                    <button><a class="white" href="<?php echo $this->url('register') ?>"><?php echo $this->translate('SIGN-UP FOR NEWLETTER') ?></a></button>
+                </div>
+                <div class="col_footer_middle">
+                    <h3 class="dt_num3">SERVICE TIMES</h3>
+                    <dl>
+                        <dt class="dt_num2">Sundays at 9:30 & 11:30AM</dt>
+                        <dd class="dt_num3">Lorem ipsum dolor</dd>
+                    </dl>
+                </div>
+                <div class="col_footer_right">
+                    <h3>CONNECT WITH US</h3>
+                    <div class="socail_media">
+                        <a target = "_blank"href="https://www.facebook.com/pages/Protea-Psychosocial-Project-for-Trans-People/1613032075611085?fref=ts"><img class="facebook" src='/images/facebook.png' width='' height='' onmouseover="this.src = '/images/facebookhover.png';" onmouseout="this.src = '/images/facebook.png';" /></a>
+                        <a target = "_blank"href="https://twitter.com/ppsptp"><img class="twitter" src='/images/twitter.png' width='' height='' onmouseover="this.src = '/images/twitterhover.png';" onmouseout="this.src = '/images/twitter.png';" /></a>
+                        <a target = "_blank" href="www.youtube.com"><img class="youtube" src='/images/youtube.png' width='' height='' onmouseover="this.src = '/images/youtubehover.png';" onmouseout="this.src = '/images/youtube.png';" /></a>
+                        <a href="<?php echo $this->url('contact') ?>"><img class="email" src='/images/email.png' width='' height='' onmouseover="this.src='/images/emailhover.png';" onmouseout="this.src='/images/email.png';" /></a>
+                    </div>
+                </div>
+                <div class="clear"/>
+            </div>
+            <hr class="hr"/><br/>
+            <p class="copy">&copy; Copyright 2015. All rights reserved. Privacy Policy</p>
+        </footer>
+    </body>

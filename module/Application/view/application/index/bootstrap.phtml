@@ -1,0 +1,197 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/preview/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="/preview/jquery.fancybox.pack.js"></script>
+        <?php echo $this->headTitle('PPSPTP ')?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                ->prependStylesheet($this->basePath() . '/css/stylesheet.css')
+                ->prependStylesheet($this->basePath() . '/css/responsive.css')
+                ->prependStylesheet($this->basePath() . '/css/slider.min.css')
+        ?>
+        <?php
+        echo $this->headScript()
+                ->prependFile($this->basePath() . '/js/myscript.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                ->prependFile($this->basePath() . '/js/slider.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+        ;
+        ?>
+
+        <!-- Scripts -->
+
+    </head>
+    <body>
+               <nav>
+            
+            <div class="container">
+                        <a href="<?php echo $this->url('home') ?>"><img class="logo" src="images/logo.png"/></a>
+                <h4 class="reg_log"><a href="<?php echo $this->url('register') ?>"><?php echo $this->translate('REGISTER') ?></a>  |  <a href="<?php echo $this->url('login') ?>"><?php echo $this->translate('LOGIN') ?></a></h4>
+                <div class="clear"/>
+            </div>
+                <div id="nav">
+    <div id="nav_wrapper">
+            <div class="container">
+                <ul class="navigation">
+                    <li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                    <li><a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('About') ?></a>
+                        <ul>
+                            <li class="active"><a href="<?php echo $this->url('howtoknow') ?>"><?php echo $this->translate('How to know') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('comingout') ?>"><?php echo $this->translate('Coming out') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('behappy') ?>"><?php echo $this->translate('Be happy') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('respect') ?>"><?php echo $this->translate('Respect') ?></a></li>
+                            </li>
+                           <li class="active"><a href="<?php echo $this->url('transition') ?>"><?php echo $this->translate('Transition') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('resources') ?>"><?php echo $this->translate('Resources') ?></a></li>
+                            <li class="active"><a href="<?php echo $this->url('bootstrap') ?>"><?php echo $this->translate('Bootstrap') ?></a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    </li>
+                    
+                    
+                    <li class="active"><a href="<?php echo $this->url('service') ?>"><?php echo $this->translate('Services') ?></a></li>
+                    <li class="active"><a href="<?php echo $this->url('members') ?>"><?php echo $this->translate('Members') ?></a></li>
+                <li><a href="<?php echo $this->url('contact') ?>"><?php echo $this->translate('Contact') ?></a></li>
+                </ul>
+                <div class="clear"/>
+            </div>
+            </div></div>
+        </nav>
+       <section>
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12 ">
+			<iframe src="https://www.google.com/calendar/embed?src=hendricksjade%40gmail.com&ctz=Africa/Johannesburg" style="border: 0" width="100%" height="385" frameborder="0" scrolling="no"></iframe>
+			</div><br/><br/>
+		</div><br/><br/>
+		<div class="row">
+		<div class="col-lg-4">
+			<div class="panel panel-default">
+				<div class="panel-heading panel_head">
+					<h3>What does transgender mean?</h3>
+				</div>
+				<div class="panel-body">
+					<p>
+						Transgender is a term used to describe people whose gender identity differs from the sex the doctor marked on their birth certificate. Gender identity is a person's internal, personal sense of being a man or a woman (or someone outside of that gender binary). For transgender people, the sex they were assigned at birth and their own internal gender identity do not match.
+</br></br>People in the transgender community may describe themselves using one (or more) of a wide variety of terms, including (but not limited to) transgender, transsexual, and genderqueer. Always use the term preferred by the individual.
+
+
+
+					</p>
+				</div>
+			</div>
+			</div>
+		<div class="col-lg-4">
+			<div class="panel panel-default">
+				<div class="panel-heading panel_head">
+					<h3>How is sexual orientation different from gender identity?</h3>
+				</div>
+				<div class="panel-body">
+					<p>
+                                            We use the acronym LGBT to describe the lesbian, gay, bisexual, and transgender community. The first three letters (LGB) refer to sexual orientation. The "T" refers to gender identity.</br></br>
+Sexual orientation describes a person's enduring physical, romantic, and/or emotional attraction to another person (for example: straight, gay, lesbian, bisexual), while gender identity describes a person's, internal, personal sense of being a man or a woman (or someone outside of that gender binary).</br></br>
+</br>
+
+					</p>
+				</div>
+			</div>
+			</div>
+		<div class="col-lg-4">
+			<div class="panel panel-default">
+				<div class="panel-heading panel_head">
+					<h3>What name and pronoun do I use?</h3>
+				</div>
+				<div class="panel-body">
+					<p>
+						For some transgender people, being associated with their birth name is a tremendous source of anxiety, or it is simply a part of their life they wish to leave behind. Respect the name a transgender person is currently using. </br></br>If you happen to know a transgender person's birth name (the name given to them when they were born, but which they no longer use), don't share it without that person's explicit permission. Sharing a transgender person's birth name and/or photos of a transgender person before their transition is an invasion of privacy, unless they have given you permission to do so. 
+					</p>
+				</div>
+			</div>
+			</div>
+		</div>
+				<h1>Gallery</h1>
+		<p>Protea Psychosocial Support Project For Trans* People</p></br>
+		</div>
+		</section>
+	<section id="gallery">
+		<div class="container">
+				<div class="gallery">
+					<div class="row">
+						<div class="col-lg-4 col-sm-4 ">
+							<a class="fancybox" rel="group"  href="images/preview/1_large.png" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac lectus mauris. In a libero">
+							<img class="img-responsive gallery_img4" src='images/preview/1.png' onmouseover="this.src='images/preview/1_hover.png';" onmouseout="this.src='images/preview/1.png';" /></a><br/><br/>
+					
+							<a class="fancybox" rel="group" href="images/preview/2_large.png" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac lectus mauris. In a libero">
+							<img class="img-responsive gallery_img4" src='images/preview/2.png' onmouseover="this.src='images/preview/2_hover.png';" onmouseout="this.src='images/preview/2.png';" /></a><br/><br/>
+						</div>
+						<div class="col-lg-4 col-sm-4">
+						
+							<a class="fancybox" rel="group" href="images/preview/3_large.png" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac lectus mauris. In a libero">
+							<img class="img-responsive gallery_img4" src='images/preview/3.png' onmouseover="this.src='images/preview/3_hover.png';" onmouseout="this.src='images/preview/3.png';" /></a><br/><br/>
+							
+							<a class="fancybox" rel="group" href="images/preview/4_large.png" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac lectus mauris. In a libero">
+							<img class="img-responsive gallery_img4" src='images/preview/4.png' onmouseover="this.src='images/preview/4_hover.png';" onmouseout="this.src='images/preview/4.png';" /></a><br/><br/>
+						</div>
+						<div class="col-lg-4 col-sm-4">
+							<a class="fancybox" rel="group" href="images/preview/5_large.png" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac lectus mauris. In a libero">
+							<img class="img-responsive gallery_img4" src='images/preview/5.png' onmouseover="this.src='images/preview/5_hover.png';" onmouseout="this.src='images/preview/5.png';"/></a><br/><br/>
+							
+							<a class="fancybox" rel="group" href="images/preview/6_large.png" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac lectus mauris. In a libero">
+							<img class="img-responsive gallery_img4" src='images/preview/6.png' onmouseover="this.src='images/preview/6_hover.png';" onmouseout="this.src='images/preview/6.png';" /></a><br/><br/>
+						</div>
+						</div>
+						</div>
+						<br/><br/><br/><br/>
+					</div>
+<div style="clear:both;"/>			
+	</section>
+			<footer>
+			<div class="container">
+				<div class="col_footer_left">
+					<h3>JOIN OUR NEWSLETTER</h3>
+					<button><a class="white" href="<?php echo $this->url('register') ?>"><?php echo $this->translate('SIGN-UP FOR NEWLETTER') ?></a></button>
+				</div>
+				<div class="col_footer_middle">
+					<h3 class="dt_num3">SERVICE TIMES</h3>
+					<dl>
+						<dt class="dt_num2">Sundays at 9:30 & 11:30AM</dt>
+						<dd class="dt_num3">Human Rights Organisation</dd>
+					</dl>
+				</div>
+				<div class="col_footer_right">
+					<h3>CONNECT WITH US</h3>
+						<div class="socail_media">
+							<a target = "_blank"href="https://www.facebook.com/pages/Protea-Psychosocial-Project-for-Trans-People/1613032075611085?fref=ts"><img class="facebook" src='images/facebook.png' width='' height='' onmouseover="this.src='images/facebookhover.png';" onmouseout="this.src='images/facebook.png';" /></a>
+							<a target = "_blank"href="https://twitter.com/ppsptp"><img class="twitter" src='images/twitter.png' width='' height='' onmouseover="this.src='images/twitterhover.png';" onmouseout="this.src='images/twitter.png';" /></a>
+							<a target = "_blank" href="#"><img class="youtube" src='images/youtube.png' width='' height='' onmouseover="this.src='images/youtubehover.png';" onmouseout="this.src='images/youtube.png';" /></a>
+							<a href="<?php echo $this->url('contact') ?>"><img class="email" src='images/email.png' width='' height='' onmouseover="this.src='images/emailhover.png';" onmouseout="this.src='images/email.png';" /></a>
+						</div>
+				</div>
+											<div class="clear"/>
+				</div>
+				<hr class="hr"/><br/>
+				<p class="copy">&copy; Copyright 2015. All Rights Reserved. Privacy Policy</p>
+		</footer>
+    <script src="js/bootstrap.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+	</script>
+  </body>
+</html>

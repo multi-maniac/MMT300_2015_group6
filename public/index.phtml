@@ -1,0 +1,225 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('PPSPTP ' ) ?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                ->prependStylesheet($this->basePath() . '/css/stylesheet.css')
+                ->prependStylesheet($this->basePath() . '/css/responsive.css')
+                ->prependStylesheet($this->basePath() . '/css/slider.min.css')
+        ?>
+
+        <!-- Scripts -->
+
+    </head>
+    <body>
+        <nav>
+            
+            <div class="container">
+                <a href="index.html"><img href="index.html" class="logo" src="images/logo.png"/></a>
+                <h4 class="reg_log"><a href="<?php echo $this->url('register') ?>"><?php echo $this->translate('REGISTER') ?></a>  |  <a href="<?php echo $this->url('login') ?>"><?php echo $this->translate('LOGIN') ?></a></h4>
+                <div class="clear"/>
+            </div>
+                <div id="nav">
+    <div id="nav_wrapper">
+            <div class="container">
+                <ul class="navigation">
+                    <li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                    <li><a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('About') ?></a>
+                        <ul>
+                            <li class="active"><a href="<?php echo $this->url('howtoknow') ?>"><?php echo $this->translate('How to know') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('comingout') ?>"><?php echo $this->translate('Coming out') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('behappy') ?>"><?php echo $this->translate('Be happy') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('respect') ?>"><?php echo $this->translate('Respect') ?></a></li>
+                            </li>
+                           <li class="active"><a href="<?php echo $this->url('transition') ?>"><?php echo $this->translate('Transition') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('resources') ?>"><?php echo $this->translate('Resources') ?></a></li>
+                            <li class="active"><a href="bootstrap.html">Boot</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    </li>
+              
+                    
+                    <li class="active"><a href="<?php echo $this->url('service') ?>"><?php echo $this->translate('Services') ?></a></li>
+                    <li class="active"><a href="<?php echo $this->url('members') ?>"><?php echo $this->translate('Members') ?></a></li>
+                <li><a href="<?php echo $this->url('contact') ?>"><?php echo $this->translate('Contact') ?></a></li>
+                </ul>
+                <div class="clear"/>
+            </div>
+            </div></div>
+        </nav>
+        <header>
+            <header>
+<div class="full-width">
+    <div class="inner">
+        <div class="slide">
+            <div>
+                Lorem ipsum dolor sit amet, consectetur. <br>
+                Curabitur molestie elit et ultricies vehicula.
+            </div>
+            <img src="images/banner.jpg" width="1020" height="400">
+        </div>
+        <div class="slide">
+		     <div>
+                Lorem ipsum dolor sit amet, consectetur. <br>
+                Curabitur molestie elit et ultricies vehicula.
+            </div>
+            <!-- Caption can be omitted without any change in functionality -->
+            <img src="images/banner2.jpg" width="1020" height="400">
+        </div>
+        <div class="slide">
+		     <div>
+                Lorem ipsum dolor sit amet, consectetur. <br>
+                Curabitur molestie elit et ultricies vehicula.
+            </div>
+            <!-- Caption can be omitted without any change in functionality -->
+            <img src="images/banner3.jpg" width="1020" height="400">
+        </div>
+        <div class="slide">
+		     <div>
+                Lorem ipsum dolor sit amet, consectetur. <br>
+                Curabitur molestie elit et ultricies vehicula.
+            </div>
+            <!-- Caption can be omitted without any change in functionality -->
+            <img src="images/banner4.jpg" width="1020" height="400">
+        </div>
+    </div>
+    <div class="controls">
+        <a href="#" class="left">&lt;</a>
+        <a href="#" class="right">&gt;</a>
+    </div>
+    <div class="slide-nav"></div>
+</div>
+		</header>
+		<section>
+		<div class="container">
+			<div class="col_imgs">
+				<img class="left_img "src="images/1.jpg"/>
+				<img class="middle_img "src="images/2.jpg"/>
+				<img class="right_img "src="images/3.jpg"/>
+			</div>
+
+			<div class="col_left">
+				<h3 class="blue">OUR SCHEDULE</h3>
+			<table cellspacing="0" cellpadding="0" class="table" style="width:100% ;">
+				<tr>
+					<td>
+						<dl>
+							<dt class="dt_num">20</dt>
+							<dd>JULY</dd>
+						</dl>
+					</td>
+					<td>
+						<dl>
+							<dt class="pink bold_pink">FAMILY SUNDAY</dt>
+							<dd>Sunday | 9:30am</dd>
+						</dl>
+					</td>
+					<td align="right">
+					<button class="table_btn" href="#">MORE</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<dl>
+							<dt class="dt_num">20</dt>
+							<dd>JULY</dd>
+						</dl>
+					</td>
+					<td>
+						<dl>
+							<dt class="pink bold_pink">FAMILY SUNDAY</dt>
+							<dd>Sunday | 9:30am</dd>
+						</dl>
+					</td>
+					<td align="right">
+					<button class="table_btn" href="#">MORE</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="last_tr">
+						<dl>
+							<dt class="dt_num">20</dt>
+							<dd>JULY</dd>
+						</dl>
+					</td>
+					<td class="last_tr">
+						<dl>
+							<dt class="pink bold_pink">FAMILY SUNDAY</dt>
+							<dd>Sunday | 9:30am</dd>
+						</dl>
+					</td>
+					<td class="last_tr" align="right">
+					<button class="table_btn" href="#">MORE</button>
+					</td>
+				</tr>
+			</table>
+			</div>
+			<div class="col_right">
+				<h3 class="blue">ABOUT US</h3>
+				<p>
+					There are many organisations in Africa that are focused on advocacy and lobbying for the human rights of trans* people.
+					There is a need for an organisation that provides psychosocial support to trans* people and their significant others.
+					While the founder/director was working for a trans* human rights organisation and after left the organisation, she experienced
+					that a lot of trans* people were approaching her for psychosocial support.
+					<br/><br/>
+					She also notices that before trans* people start their medically transitioning process; there is a lot of psychosocial support....... 
+				</p>
+				<a class="pink" href="<?php echo $this->url('about') ?>"><?php echo $this->translate('READ MORE') ?></a>
+				
+			</div>
+			<div class="clear"/>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="col_footer_left">
+					<h3>JOIN OUR NEWSLETTER</h3>
+					<button>EMAIL SIGNUP</button>
+				</div>
+				<div class="col_footer_middle">
+					<h3 class="dt_num3">SERVICE TIMES</h3>
+					<dl>
+						<dt class="dt_num2">Sundays at 9:30 & 11:30AM</dt>
+						<dd class="dt_num3">Lorem ipsum dolor</dd>
+					</dl>
+				</div>
+				<div class="col_footer_right">
+					<h3>CONNECT WITH US</h3>
+						<div class="socail_media">
+							<a target = "_blank"href="https://www.facebook.com/pages/Protea-Psychosocial-Project-for-Trans-People/1613032075611085?fref=ts"><img class="facebook" src='images/facebook.png' width='' height='' onmouseover="this.src='images/facebookhover.png';" onmouseout="this.src='images/facebook.png';" /></a>
+							<a target = "_blank"href="https://twitter.com/ppsptp"><img class="twitter" src='images/twitter.png' width='' height='' onmouseover="this.src='images/twitterhover.png';" onmouseout="this.src='images/twitter.png';" /></a>
+							<a target = "_blank" href="#"><img class="youtube" src='images/youtube.png' width='' height='' onmouseover="this.src='images/youtubehover.png';" onmouseout="this.src='images/youtube.png';" /></a>
+							<a target = "_blank" href="contact.html"><img class="email" src='images/email.png' width='' height='' onmouseover="this.src='images/emailhover.png';" onmouseout="this.src='images/email.png';" /></a>
+						</div>
+				</div>
+											<div class="clear"/>
+				</div>
+				<hr class="hr"/><br/>
+				<p class="copy">&copy; Copyright 2015. All rights reserved. Privacy Policy</p>
+		</footer>
+	<script src="js/vendor/jquery-2.1.3.js"></script>
+      <script src="js/slider.min.js"></script>
+      <script>
+		$('.full-width').fullWidth();
+      </script>
+	<script src="js/myscripts.js"></script>
+	
+	</body>
+</html>

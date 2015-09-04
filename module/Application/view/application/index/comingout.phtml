@@ -1,0 +1,168 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('PPSPTP ')?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                ->prependStylesheet($this->basePath() . '/css/stylesheet.css')
+                ->prependStylesheet($this->basePath() . '/css/responsive.css')
+                ->prependStylesheet($this->basePath() . '/css/slider.min.css')
+        ?>
+        <?php
+        echo $this->headScript()
+                ->prependFile($this->basePath() . '/js/myscript.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                ->prependFile($this->basePath() . '/js/slider.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+        ;
+        ?>
+
+        <!-- Scripts -->
+
+    </head>
+    <body>
+               <nav>
+            
+            <div class="container">
+                        <a href="<?php echo $this->url('home') ?>"><img class="logo" src="images/logo.png"/></a>
+                <h4 class="reg_log"><a href="<?php echo $this->url('register') ?>"><?php echo $this->translate('REGISTER') ?></a>  |  <a href="<?php echo $this->url('login') ?>"><?php echo $this->translate('LOGIN') ?></a></h4>
+                <div class="clear"/>
+            </div>
+                <div id="nav">
+    <div id="nav_wrapper">
+            <div class="container">
+                <ul class="navigation">
+                    <li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                    <li><a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('About') ?></a>
+                        <ul>
+                            <li class="active"><a href="<?php echo $this->url('howtoknow') ?>"><?php echo $this->translate('How to know') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('comingout') ?>"><?php echo $this->translate('Coming out') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('behappy') ?>"><?php echo $this->translate('Be happy') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('respect') ?>"><?php echo $this->translate('Respect') ?></a></li>
+                            </li>
+                           <li class="active"><a href="<?php echo $this->url('transition') ?>"><?php echo $this->translate('Transition') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('resources') ?>"><?php echo $this->translate('Resources') ?></a></li>
+                            <li class="active"><a href="<?php echo $this->url('bootstrap') ?>"><?php echo $this->translate('Bootstrap') ?></a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    </li>
+                    
+                    
+                    <li class="active"><a href="<?php echo $this->url('service') ?>"><?php echo $this->translate('Services') ?></a></li>
+                    <li class="active"><a href="<?php echo $this->url('members') ?>"><?php echo $this->translate('Members') ?></a></li>
+                <li><a href="<?php echo $this->url('contact') ?>"><?php echo $this->translate('Contact') ?></a></li>
+                </ul>
+                <div class="clear"/>
+            </div>
+            </div></div>
+        </nav>
+        <header>
+			<img class="banner" src="images/banner_coming.jpg"/>
+		</header>
+		<section>
+			<div class="container">
+				<div class="col_left_co">
+					<h3 class="blue research_header">
+						Coming out as Trans* is different for everyone. However, some tried and true methods have been used with
+						some amount of success by many people coming out.<br/><br/>
+					</h3>
+					<hr class="links_hr"/>	
+						<h3 class="blue research_header">LOOK AT YOUR AUDIENCE</h3>
+						<p>
+							For some people it may not make sense to come out. 
+							For instance, a person under the age of 18 may have a harder time with this process due to being a minor and still being dependent on family member,  so it may be smarter to confide in a trustworthy friend or two before going to the parents.<br/><br/>
+							Some family members and friends may be more willing to be your allies than others: start with a brother, cousin, or a friend whom you can trust. 
+						</p>
+					<hr class="links_hr"/>	
+						<h3 class="blue research_header">DO SOME RESEARCH</h3>
+							<p>
+								Arm yourself with knowledge in case a loved one has questions and 
+								to make you’re coming out methods as informed as possible. There are plenty of sources online - search YouTube for explanations or stories of other Trans* people. 
+							</p>
+							<hr class="links_hr"/>
+						<h3 class="blue research_header">WRITE A LETTER</h3>
+							<p>
+								Composing a letter to your family, friends, and loved ones can help ease the tension created by perceived rejection. Be clear on why you are transitioning and reaffirm 
+								the importance of this process. This can be used to come out to family members you rarely talk to or see. Use letters from others to get ideas on how to address your loved ones.  
+							</p>
+							<hr class="links_hr"/>
+						<h3 class="blue research_header">PROVIDE READING MATERIAL</h3>
+							<p>
+								Literature on the Trans* community may help those whose loved ones are drawn to reading material. This can give a lot of information to a person without you having to interact with the individual a great deal. Many organizations have brochures and pamphlets full of information. Contact your local Lesbian, Gay, Bisexual, Trans* organization to ask about procuring a few 
+								to give as support material. Quite a few books have been published on the Trans* community. Review a couple and pick the one that's best for your situation.<br/><br/>
+							</p><br/>
+				</div>
+				<div class="col_right_co">
+					<h3 class="blue research_header">WARNINGS</h3><br/>
+					<p>
+						This may cause some family and friends to not want to talk to you.<br/><br/>
+						Unfortunately this is a byproduct of ignorance and resistance to change.
+						This may be an ongoing process.
+					</p>
+						<br/>
+						<hr class="links_hr"/>
+					<div class="tips_co">
+						<h3 class="blue research_header">TIPS:</h3>
+						<h4 class="research_header">DON'T RUSH</h4>
+						<p>
+							Choose your friends wisely. Coming out to an untrustworthy friend may make the process harder than it needs to be.
+						</p>
+						<h4 class="research_header ">Read Literature</h4>
+						<p>
+							ahead of time. Marking in the margins of books or highlighting may help you collect your thoughts and show you are serious.
+						</p>
+						<h4 class="research_header">PLAN YOUR DISCUSSION TIME</h4>
+						<p>
+							accordingly so you won't be interrupted and will have ample time for questions.
+							Search for example letters to get a good idea of what one may look like. Use the letter as a framework and tailor it to your needs.
+						</p>
+					</div>
+				</div>
+				<div class="clear">
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="col_footer_left">
+					<h3>JOIN OUR NEWSLETTER</h3>
+					<button><a class="white" href="<?php echo $this->url('register') ?>"><?php echo $this->translate('SIGN-UP FOR NEWLETTER') ?></a></button>
+				</div>
+				<div class="col_footer_middle">
+					<h3 class="dt_num3">SERVICE TIMES</h3>
+					<dl>
+						<dt class="dt_num2">Sundays at 9:30 & 11:30AM</dt>
+						<dd class="dt_num3">Human Rights Organisation</dd>
+					</dl>
+				</div>
+				<div class="col_footer_right">
+					<h3>CONNECT WITH US</h3>
+						<div class="socail_media">
+							<a target = "_blank"href="https://www.facebook.com/pages/Protea-Psychosocial-Project-for-Trans-People/1613032075611085?fref=ts"><img class="facebook" src='images/facebook.png' width='' height='' onmouseover="this.src='images/facebookhover.png';" onmouseout="this.src='images/facebook.png';" /></a>
+							<a target = "_blank"href="https://twitter.com/ppsptp"><img class="twitter" src='images/twitter.png' width='' height='' onmouseover="this.src='images/twitterhover.png';" onmouseout="this.src='images/twitter.png';" /></a>
+							<a target = "_blank" href="#"><img class="youtube" src='images/youtube.png' width='' height='' onmouseover="this.src='images/youtubehover.png';" onmouseout="this.src='images/youtube.png';" /></a>
+							<a href="<?php echo $this->url('contact') ?>"><img class="email" src='images/email.png' width='' height='' onmouseover="this.src='images/emailhover.png';" onmouseout="this.src='images/email.png';" /></a>
+						</div>
+				</div>
+											<div class="clear"/>
+				</div>
+				<hr class="hr"/><br/>
+				<p class="copy">&copy; Copyright 2015. All Rights Reserved. Privacy Policy</p>
+		</footer>
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="js/myscripts.js"></script>
+	</body>
+</html>

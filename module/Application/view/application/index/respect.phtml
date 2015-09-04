@@ -1,0 +1,175 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('PPSPTP ')?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                ->prependStylesheet($this->basePath() . '/css/stylesheet.css')
+                ->prependStylesheet($this->basePath() . '/css/responsive.css')
+                ->prependStylesheet($this->basePath() . '/css/slider.min.css')
+        ?>
+        <?php
+        echo $this->headScript()
+                ->prependFile($this->basePath() . '/js/myscript.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                ->prependFile($this->basePath() . '/js/slider.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+        ;
+        ?>
+
+        <!-- Scripts -->
+
+    </head>
+    <body>
+               <nav>
+            
+            <div class="container">
+                        <a href="<?php echo $this->url('home') ?>"><img class="logo" src="images/logo.png"/></a>
+                <h4 class="reg_log"><a href="<?php echo $this->url('register') ?>"><?php echo $this->translate('REGISTER') ?></a>  |  <a href="<?php echo $this->url('login') ?>"><?php echo $this->translate('LOGIN') ?></a></h4>
+                <div class="clear"/>
+            </div>
+                <div id="nav">
+    <div id="nav_wrapper">
+            <div class="container">
+                <ul class="navigation">
+                    <li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                    <li><a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('About') ?></a>
+                        <ul>
+                            <li class="active"><a href="<?php echo $this->url('howtoknow') ?>"><?php echo $this->translate('How to know') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('comingout') ?>"><?php echo $this->translate('Coming out') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('behappy') ?>"><?php echo $this->translate('Be happy') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('respect') ?>"><?php echo $this->translate('Respect') ?></a></li>
+                            </li>
+                           <li class="active"><a href="<?php echo $this->url('transition') ?>"><?php echo $this->translate('Transition') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('resources') ?>"><?php echo $this->translate('Resources') ?></a></li>
+                            <li class="active"><a href="<?php echo $this->url('bootstrap') ?>"><?php echo $this->translate('Bootstrap') ?></a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    </li>
+                    
+                    
+                    <li class="active"><a href="<?php echo $this->url('service') ?>"><?php echo $this->translate('Services') ?></a></li>
+                    <li class="active"><a href="<?php echo $this->url('members') ?>"><?php echo $this->translate('Members') ?></a></li>
+                <li><a href="<?php echo $this->url('contact') ?>"><?php echo $this->translate('Contact') ?></a></li>
+                </ul>
+                <div class="clear"/>
+            </div>
+            </div></div>
+        </nav>
+        <header>
+			<img class="banner" src="images/banner_respect.jpg"/>
+		</header>
+		<section>
+		<div class="container">
+			<div class="left_info part1">
+				<h3 class="blue">RESPECT</h3>
+					<p>
+						If you have recently learned of a person who is Trans* in your life, you might not understand this part of their identity and you may be unsure of how to act around them without offending or hurting their feelings.<br/><br/> 
+						The term "Trans* person" in this article means a person who does not identify with their birth-assigned sex and/or their birth-assigned gender. There are Trans* people all over the world and in a wide variety of cultures--in fact, it'd be hard to name a country or culture where Trans* people aren't present.<br/><br/> 
+						For such people, it is not always easy to explain their gender situation in today's society. You'll have to understand and respect someone who challenges your ideas about gender and sex, and who does not easily fall within the category of "male" or "female" or "masculine" or "feminine". You can start by respecting the person's self-identity and using the same terms and pronouns that the person uses to describe them.<br/><br/> 
+					</p>
+			
+			</div>
+			<div class="left_info part2">
+				<h3 class="blue">STEPS</h3>
+					<ul>
+						<li>Be with people unconditionally, as you would be with any other person, especially where gender is a non-topic in life. </li>
+						<li>Watch your past tense</li>
+						<li>Use language appropriate to the person's gender. </li>
+						<li>Don't be afraid to ask questions</li>
+						<li>Respect the trans* person's need for privacy. </li>
+						<li>Don't assume you know what the person's experience is.</li>
+						<li>Begin to recognize the difference between gender identity and sexuality</li>
+						<li>Treat trans* persons the same.</li>
+						<li>Be supportive. </li>
+					</ul>
+					
+			</div>
+			
+			<div class="left_info part3">
+				<h3 class="blue">TIPS</h3>
+					<ul>
+						<li>Some trans* people will be comfortable answering questions, and some will not. If a trans* person is uncomfortable answering, or doesn't want to, then let it go. If you need to know, use the resources below.</li>
+						<li>Many believe that the word "trans*" is an adjective, and a descriptive word; not a noun or a verb. Others believe otherwise. Just as you wouldn't call an older person "an old" or say they are "olded", it is inappropriate to refer to a trans* person as "a trans*" without adding "person", "woman", "man", or any other appropriate noun. Some trans* people also consider this objectifying and dehumanizing.</li>
+						<li>For the media: Do not ask a trans* person to show you their before/after person, be it 10 years ago or a morning before/makeup pictorial, unless they are expressly comfortable with doing it. Many trans* people feel guilt if they don't comply with a request for something they consider advocacy, even if it harms them. Remember, these pictures will follow this person the rest of their lives and there are some online types who will use those pictures against them, for the rest of their lives.</li>
+						<li>If you slip up early on and say "she" or "he" when you meant the other, don't apologize too much, just follow the mistake with the right term and continue what you were saying.</li>
+						<li>Unless you have a close and personal relationship, it may be rude to ask what their "real" name or birth name was -- they consider the name they have chosen to suit their gender (if they have done so) to be their real name, and they want you to think of them that way.</li>
+						<li>Some people believe that the only "cure" for being trans* is to correct the physical appearance (with surgery and/or hormones) to match the mental gender identity. These people believe there is a problem with the body, not the mind. Current medical evidence and authorities support the effectiveness of these treatments (See AMA, APA, APA, NASW and WPATH statements.) Some people believe that it is society's gender expectations and limitations for men and women are the core issue and need to reflect an acceptance of a wider variety of gender expression for males and females.</li>
+						<li>Do what you're doing now! Research can help! This is a key factor in supporting your trans* friend. Educating yourself could mean a lot. Keep it up.</li>
+						<li>Not all trans* people pursue genital reconstruction surgery (GRS). GRS is almost always more appropriate to use than "sex change operation." Don't assume that it's appropriate to ask about a person's plans for surgery, hormones, and so forth, any more than you would pry into someone else's medical affairs. Moreover, don't assume that there is only one "right," path to transition (e.g. that to "really be trans*" or to "finish your transition," you need to have GRS).</li>
+						<li>Asking about trans* peoples' genitals and how they have sex is not appropriate, in the same way that asking cisgender (those whose bodies naturally match their gender preference) people how they have sex is not appropriate.</li>
+						<li>Websites like My True Gender, PlanetOut or 4chan have trans* groups, or other sections for trans* people; go to them to talk to people or learn more.</li>
+					</ul>
+			
+			</div>
+			<div class="left_info part4">
+				<h3 class="blue">Warnings</h3>
+				<ul>
+					<li>Intersex" is a general term used for a variety of conditions in which a person is born with reproductive and/or sexual anatomy that doesn’t seem to fit the typical definitions of female or male, While some intersex people are also trans*, the two are not the same and should not be conflated. </li>
+					<li>Even if you have objections to a person's gender identity, you should always respect the person and never willfully embarrass them publicly. Embarrassing or humiliating the person does no good for anyone. This situation could also become unsafe for the person the attention is being drawn to.</li>
+					<li>Avoid the use of trans* phobic slurs like "tranny" and "she male." These terms are oppressive, objectifying, and dehumanizing.</li>
+					<li>Do not compare them to a non-trans* person by calling that person a "real" or "normal" girl/boy. What makes a man a "real" man or a woman a "real" woman is the way they identify themselves, not the way someone else experiences or classifies their body. A trans* man is no less a man than a cisgender man; a trans* woman is no less a woman than a cisgender woman.</li>
+					<li>Never tell a trans* person that people will not understand or love them because of their trans* identity. It hurts very badly, and is not true. Many trans* people are understood, accepted and loved.</li>
+					<li>Be very careful when referring to someone's gender identity as a "choice". Gender dysphoria is certainly not a choice by its very definition. Some trans* people describe their identity as a choice, and some do not. For some, the "choice" was to fix their body to match their mind. Find ways to respect a person's identity that don't hinge on whether or not they can "help it". For many the choice is to honor their authentic gender identity, or not. For many the choice is also to live or end their life through suicide.</li>
+					<li>Do not use Segregatory Coordination (separated and still make sense) language by applying pre-gender labels such as cisgender woman, trans-man, transsexual woman, and so on unless the person uses that identifying language as their gender designation. In life people just go by their gender identity, whatever that is for them. The unspoken language is that you are not your gender, you are something different, and that is not true.</li>
+				</ul>
+			</div>
+			<div class="right_links">
+				<hr class="links_hr"/>
+					<h3 class="pink"><a class="mandv" href="#!">RESPECT A TRANS* PERSON</a></h3>
+				<hr class="links_hr"/>	
+					<h3 class="blue"><a class="boardmem" href="#!">STEPS</a></h3>
+				<hr class="links_hr"/>	
+					<h3 class="blue"><a class="history"	href="#!">TIPS</a></h3>
+				<hr class="links_hr"/>	
+					<h3 class="blue"><a class="services" href="#!">WARNINGS</a></h3>
+				<hr class="links_hr"/>
+			</div>
+			<div class="clear"/>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="col_footer_left">
+					<h3>JOIN OUR NEWSLETTER</h3>
+					<button><a class="white" href="<?php echo $this->url('register') ?>"><?php echo $this->translate('SIGN-UP FOR NEWLETTER') ?></a></button>
+				</div>
+				<div class="col_footer_middle">
+					<h3 class="dt_num3">SERVICE TIMES</h3>
+					<dl>
+						<dt class="dt_num2">Sundays at 9:30 & 11:30AM</dt>
+						<dd class="dt_num3">Human Rights Organisation</dd>
+					</dl>
+				</div>
+				<div class="col_footer_right">
+					<h3>CONNECT WITH US</h3>
+						<div class="socail_media">
+							<a target = "_blank"href="https://www.facebook.com/pages/Protea-Psychosocial-Project-for-Trans-People/1613032075611085?fref=ts"><img class="facebook" src='images/facebook.png' width='' height='' onmouseover="this.src='images/facebookhover.png';" onmouseout="this.src='images/facebook.png';" /></a>
+							<a target = "_blank"href="https://twitter.com/ppsptp"><img class="twitter" src='images/twitter.png' width='' height='' onmouseover="this.src='images/twitterhover.png';" onmouseout="this.src='images/twitter.png';" /></a>
+							<a target = "_blank" href="#"><img class="youtube" src='images/youtube.png' width='' height='' onmouseover="this.src='images/youtubehover.png';" onmouseout="this.src='images/youtube.png';" /></a>
+							<a href="<?php echo $this->url('contact') ?>"><img class="email" src='images/email.png' width='' height='' onmouseover="this.src='images/emailhover.png';" onmouseout="this.src='images/email.png';" /></a>
+						</div>
+				</div>
+											<div class="clear"/>
+				</div>
+				<hr class="hr"/><br/>
+				<p class="copy">&copy; Copyright 2015. All Rights Reserved. Privacy Policy</p>
+		</footer>
+        <script src="js/vendor/jquery-2.1.3.js"></script>
+        <script src="js/myscripts.js"></script>
+	</body>
+</html>

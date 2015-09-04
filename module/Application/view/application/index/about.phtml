@@ -1,0 +1,228 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+           <?php echo $this->headTitle('PPSPTP ')?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                ->prependStylesheet($this->basePath() . '/css/stylesheet.css')
+                ->prependStylesheet($this->basePath() . '/css/responsive.css')
+                ->prependStylesheet($this->basePath() . '/css/slider.min.css')
+        ?>
+        <?php
+        echo $this->headScript()
+                ->prependFile($this->basePath() . '/js/myscript.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                ->prependFile($this->basePath() . '/js/slider.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+        ;
+        ?>
+
+        <!-- Scripts -->
+
+    </head>
+    <body>
+           <nav>
+            
+            <div class="container">
+                       <a href="<?php echo $this->url('home') ?>"><img class="logo" src="images/logo.png"/></a>
+                <h4 class="reg_log"><a href="<?php echo $this->url('register') ?>"><?php echo $this->translate('REGISTER') ?></a>  |  <a href="<?php echo $this->url('login') ?>"><?php echo $this->translate('LOGIN') ?></a></h4>
+                <div class="clear"/>
+            </div>
+                <div id="nav">
+    <div id="nav_wrapper">
+            <div class="container">
+                <ul class="navigation">
+                    <li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                    <li><a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('About') ?></a>
+                        <ul>
+                            <li class="active"><a href="<?php echo $this->url('howtoknow') ?>"><?php echo $this->translate('How to know') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('comingout') ?>"><?php echo $this->translate('Coming out') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('behappy') ?>"><?php echo $this->translate('Be happy') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('respect') ?>"><?php echo $this->translate('Respect') ?></a></li>
+                            </li>
+                           <li class="active"><a href="<?php echo $this->url('transition') ?>"><?php echo $this->translate('Transition') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('resources') ?>"><?php echo $this->translate('Resources') ?></a></li>
+                            <li class="active"><a href="<?php echo $this->url('bootstrap') ?>"><?php echo $this->translate('Bootstrap') ?></a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    </li>
+                    
+                    
+                    <li class="active"><a href="<?php echo $this->url('service') ?>"><?php echo $this->translate('Services') ?></a></li>
+                    <li class="active"><a href="<?php echo $this->url('members') ?>"><?php echo $this->translate('Members') ?></a></li>
+                <li><a href="<?php echo $this->url('contact') ?>"><?php echo $this->translate('Contact') ?></a></li>
+                </ul>
+                <div class="clear"/>
+            </div>
+            </div></div>
+        </nav>
+        <header>
+            <img class="banner" src="images/banner.jpg"/>
+        </header>
+       <section class="section_about">
+		<div class="container">
+			<div class="left_info part1">
+				<h3 class="blue"> OUR MISSION</h3>
+					<ul>
+						<li>The aim of our organisation is to provide resources, advice, psychosocial support and information for trans* people.</li>
+						<li>Protea Psychosocial Support Project will provides resources, information, counselling and support to trans* people, their partners, family, employers and the public.</li>
+						<li>To establish an environment in which superior quality psychosocial care services can be rendered to improve the lives of trans* individuals, their families and the trans* people of Africa in general.</li>
+						<li>To offer an integrated psychosocial service treating traumatised trans* individuals, their significant others and promoting their rights</li>
+						<li>To create awareness of trans* people's needs</li>
+						<li>To provide for the educational and training needs and to empower all people involved in the care and management of trans* people and adolescents who have been traumatised as well as their families</li>
+						<li>To provide a compassionate and holistic integrated medical and psychosocial service to survivors of rape, attempted rape and sexual abuse in adults, children and their families </li>
+						<li>To provide an integrated psychosocial and support service to HIV/AIDS patients and their significant others.</li>
+						<li>To create an environment and making facilities available to support these services and to promote the prevention of trauma.</li>
+					</ul>
+			
+			</div>
+			<div class="left_info part2">
+				<h3 class="blue"> BOARD MEMBERS</h3>			
+					<div>
+						<img class="" src="images/boardmembers/1.jpg"/>
+							<h3>Chair Person: Tina Sandra West</h3>
+							<p>
+								Tina Sandra West was born in Pretoria. She completed a B.Comm in Industrial Psychology at the University of North West before opting for a career in deep level Gold Mining.
+								She endured a year of conscripted military service which was followed by almost 12 years frequent 30 to 90 day per year call ups during infamous bush war on the Namibia, Anglo border.
+								After 21 years in the mining industry as a university vacation student, through a full time career she ventured into the world of IT and equipped herself with a diploma in Industrial
+								Engineering and Computer System Design. From 1998 she found herself in the cellular industry where at first it was design, implement and maintain computer business systems for stock
+								control and point of sales.  It later developed into a career in warehousing during which period she also transition from male to female. She is post op since 2007 with a new ID
+								reflecting her new gender, an achievement that did not come easy. She enjoy respect from her colleagues and still hold the same senior position in the company she have been working for
+								since starting her transitioning. She like to think that she can make a small contribution to the transgender community in the way of encouragement and if nothing else, prove that it is
+								never too late to be the person you were born to be. She recently had the honour to serve on the board of Gender DynamiX for 2012 – 2014.
+							</p>
+					</div>					
+					<div>
+						<img class="" src="images/boardmembers/2.png"/>
+						<h3>Vice Chair: Maharani Zunairah Peters</h3>
+						<p>
+						Maharani Zunairah Peters is a transsexual woman from Cape Town. She has been a human rights activist with more than a decade of experience in LGBTIQA activism. She have a great passion for
+						her community and her country and she believes her purpose is to advocate for equality in terms of the necessary services that all trans*people require with much desperation in this country.
+						</p>
+					</div>					
+					<div>
+						<img class="" src="images/boardmembers/3.png"/>
+						<h3>Treasurer: S’fiso Dladla</h3>
+						<p>
+							“I Always remind myself that community development is the responsibility of all regardless the amount of contributed time it all counts” S’fiso Dladla is a Public Relations graduate currently
+							furthering his studies in this field. He completed a Project Management qualification in 2010 which directed him to be a LGBTIQA rights activist till this day. He had worked and volunteered with
+							a number of organisations including MOSIAC, Mens Health, Gender DynamiX and Gay & Lesbian Network. He completed a number of trainings in sexuality and sexual rights, HIV/AIDS and gender equality.
+							He was the Brandhouse Pitch Polish Business incubator semi finalist in 2011. He is the founder of a community Youth Education Development Organisation named VEDO which plays a huge role in rural
+							education development. As a young academia, he pledge to use, contribute and influence  with his skills and knowledge in the mission of supporting the LGBTIQA society.
+						</p>
+					</div>					
+					<div>
+						<img class="" src="images/boardmembers/4.jpg"/>
+						<h3>Secretary: Waleed Leigh Davids</h3>
+						<p>
+							Waleed Leigh Davids is a trans* female. She is also a transgender sex worker and activist. She is from Cape Town. She believes in the health of trans* people and sex workers. She is a member of Sisonke
+							and advocate strongly for the decriminalization of sex work in South Africa.	
+						</p>
+					</div>					
+					<div>
+						<img class="" src="images/boardmembers/5.jpg"/>
+						<h3>Mc Member: Carol Charmain Musikanth</h3>
+						<p>
+							Carol Charmain Musikanth is married with three children, two boys and one girl. She is a Counselling Psychologist based in Cape Town and are currently completing a Masters degree in Psychology. She runs a private
+							practice focusing on trauma and gender diversity. She also lecture a number of psychology modules at The South African College for Applied Psychology. Carol runs a support group for parents of trans* children.
+							She is also a Referral Officer for Lifeline and does debriefing for SAPS.
+						</p>
+					</div>					
+					<div>
+						<img class="" src="images/boardmembers/6.jpg"/>
+						<h3>MC Member: Brian Bongani Sibeko</h3>
+						<p></p>
+					</div>					
+			</div>
+			<div class="left_info part3">
+				<h3 class="blue">OUR GOALS</h3>
+					<ul>
+						<li>To provide efficient psychosocial patient care through the medium of individual-, group- and community work.</li>
+						<li>To provide efficient in-service training for staff as well as training of other health professionals in the management of psychosocial care.</li>
+						<li>To do research in order to evaluate and maintain a high standard of service.</li>						
+						<li>To maintain an efficient standard of administration and accountability.</li>
+						<li>To establish a unit for traumatised trans* people and their families.</li>
+						<li>To establish a training and counselling centre to deal with trauma.</li>						
+						<li>To establish a unit for rape survivors.</li>
+						<li>To establish a psychosocial support and information centre for HIV/AIDS and cancer patients as well as the patients who require support and empowerment.</li>
+						<li>To establish a sport centre with a holistic therapeutic approach to traumatised trans* people and contributing to their psychosocial and physical welfare.</li>						
+						<li>To initiate special projects based on need assessment and research.</li>
+						<li>To network with other Departments within the Hospital, other service providers, similar institutions and all stakeholders.</li>
+					</ul>
+			
+			</div>
+			<div class="left_info part4">
+				<h3 class="blue">ABOUT</h3>
+					<p>
+						There are many organisations in Africa that are focused on advocacy and lobbying for the human rights of trans* people. There is a need for an organisation that
+						provides psychosocial support to trans* people and their significant others. While the founder/director was working for a trans* human rights organisation and after
+						left the organisation, she experienced that a lot of trans* people were approaching her for psychosocial support. She also notices that before trans* people start
+						their medically transitioning process; there is a lot of psychosocial support. Soon after the trans* person is on medication, the support falls away. Grootte Schuur
+						Hospital is trying to provide this support but due to a lack of personnel and funding, they cannot give the psychosocial support the trans* person needed. These were
+						motivational factors that lead to the starting of the organisation. Talks on starting such an organisation started in April 2015 already but papers were only signed in June 2015.
+					</p>
+				<h3 class="blue">ABOUT US</h3>
+					<p>
+						The aim of our organisation is to provide resources, advice, psychosocial support and information for trans* people.
+						Protea Psychosocial Support Project will provides resources, information, counselling and support to trans* people, their partners, family, employers and the public.
+					</p>
+			</div>
+			<div class="right_links">
+				<hr class="links_hr"/>
+					<h3 class="pink"><a class="mandv" href="#!">MISSION & VISION</a></h3>
+				<hr class="links_hr"/>	
+					<h3 class="blue"><a class="boardmem" href="#!">BOARD MEMBERS</a></h3>
+				<hr class="links_hr"/>	
+					<h3 class="blue"><a class="history"href="#!">OUR GOALS</a></h3>
+				<hr class="links_hr"/>	
+					<h3 class="blue"><a class="services"href="#!">SERVICES</a></h3>
+				<hr class="links_hr"/>
+			</div>
+			<div class="clear"/>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="col_footer_left">
+					<h3>JOIN OUR NEWSLETTER</h3>
+					<button><a class="white" href="<?php echo $this->url('register') ?>"><?php echo $this->translate('SIGN-UP FOR NEWLETTER') ?></a></button>
+				</div>
+				<div class="col_footer_middle">
+					<h3 class="dt_num3">SERVICE TIMES</h3>
+					<dl>
+						<dt class="dt_num2">Sundays at 9:30 & 11:30AM</dt>
+						<dd class="dt_num3">Human Rights Organisation</dd>
+					</dl>
+				</div>
+				<div class="col_footer_right">
+					<h3>CONNECT WITH US</h3>
+						<div class="socail_media">
+							<a target = "_blank"href="https://www.facebook.com/pages/Protea-Psychosocial-Project-for-Trans-People/1613032075611085?fref=ts"><img class="facebook" src='images/facebook.png' width='' height='' onmouseover="this.src='images/facebookhover.png';" onmouseout="this.src='images/facebook.png';" /></a>
+							<a target = "_blank"href="https://twitter.com/ppsptp"><img class="twitter" src='images/twitter.png' width='' height='' onmouseover="this.src='images/twitterhover.png';" onmouseout="this.src='images/twitter.png';" /></a>
+							<a target = "_blank" href="#"><img class="youtube" src='images/youtube.png' width='' height='' onmouseover="this.src='images/youtubehover.png';" onmouseout="this.src='images/youtube.png';" /></a>
+							<a href="<?php echo $this->url('contact') ?>"><img class="email" src='images/email.png' width='' height='' onmouseover="this.src='images/emailhover.png';" onmouseout="this.src='images/email.png';" /></a>
+						</div>
+				</div>
+											<div class="clear"/>
+				</div>
+				<hr class="hr"/><br/>
+				<p class="copy">&copy; Copyright 2015. All Rights Reserved. Privacy Policy</p>
+		</footer>
+        <script src="js/vendor/jquery-2.1.3.js"></script>
+        <script src="js/myscripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,249 @@
+   /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 21, 2015, 1:21:36 PM
+    Author     : jonas
+*/
+body{
+    background-color: #Ccc;
+    color: #000305;
+    font-family: Arial,'Lucida sans Unicode';
+    line-height: 1.5;
+    text-align: left;
+}
+a{
+    text-decoration: none;
+}
+a:link, a:visited{
+    color:blue;
+}
+a:hover, a:active{
+    
+}
+#login{
+    font-size: 16px;
+}
+.container_2{
+    margin: 0 auto;
+    width: 90%;
+    clear: both;
+    background-color: #fff;
+}
+.mainHeader .logo{
+    padding: 18px;
+}
+.mainHeader .social{
+    padding:0 0 0 77%;
+}
+.mainHeader nav{
+    font-size: 14px;
+    background-color: #04b3aa;
+    height: 40px;
+    border-radius: 1px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+}
+.dropdown-menu{
+background-color: #04b3aa;
+}
+.dropdown-menu  a:hover{
+    background-color: #b4cf40;
+}
+.mainHeader nav li{
+    list-style: none;
+    margin: 0 auto;
+}
+.mainHeader nav ul li{
+    float:left;
+    display:inline;
+}
+.mainHeader nav a:link, .mainHeader nav a:visited{
+    color: #fff;
+    display:inline-block;
+    padding: 10px 31px;
+    height: 40px;
+}
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited{
+    background-color: #b4cf40;
+    text-shadow: none;
+}    
+.mainHeader nav ul li a{
+    border-radius: 1px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+}
+.mainContent{
+    line-height: 37px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.c{
+    background-color: #b4cf40;
+    height: 10px;
+}
+div.slider{
+    background: url("../img/slider-d_0.jpg");
+    background-size: cover;
+    height: 380px;
+}
+div.slider2{
+    background: url("../img/slider_2.jpg");
+    background-size: cover;
+    height: 380px;
+}
+div.slider3{
+    background: url("../img/SliderOil.png");
+    background-size: cover;
+    height: 380px;
+}
+div.d{
+    height: 380px
+}
+div.wrapper{
+    height: 800px;
+    background-color: #01a5d9;
+}
+div.home-wrapper{
+    height: 500px;
+    background-color: #01a5d9;
+}
+div.box-1{
+    float:left;
+    width:50%;
+    height: auto;
+    padding:10px 0px 0 0px;
+    margin:1px 3px 0 50px;  
+}
+div.box-2{
+    background-color: #b4cf40;
+    float:left;
+    width:33%;
+    height: auto;
+    padding:10px 80px 0 0px;
+    margin:48px 3px 0 70px;
+     border-radius: 1px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    font-size: 12px;
+}
+div.box-1 h1{
+    text-align:center;
+    color:#fff;
+}
+h2{
+    text-align:left;
+    color:#fff;
+}
+div.box-2 p{
+    text-align:left;
+    color:#fff;
+    padding-left: 30px;
+}
+div.box-3{
+    float:left;
+    width:420px;
+    height: auto;
+    padding:10px 0px 0 0px;
+    margin:1px 3px 0 50px;  
+}
+.photo-box{
+    float:left;
+    width:700px;
+    padding:20px 20px 10px 20px;
+    margin:10px 3px 10px  50px;  
+}
+.video-box{
+    float:left;
+    width:400px;
+    height: auto;
+    padding:20px 20px 10px 20px;
+    margin:10px 3px 10px  60px; 
+}
+.our{
+    font-size: 15px;
+    background-color: #01a5d9;
+    border-radius: 1px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    height: 40px;
+    width:300px;
+    margin-left: 18px;
+}
+.payfast{
+     background-color: #01a5d9;
+    border-radius: 1px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    height: 40px;
+    width:300px;
+    margin-left: 18px;
+}
+h1{
+    text-align: center;
+    color: #fff;
+}
+
+.mainFooter{
+    width:100%;
+    height: 90px;
+    float: left;
+    background-color: #b4cf40;
+    border-radius: 1px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    margin-top:2% 0;
+}
+.mainFooter h2{
+    color: #01a5d9;
+    text-align: center;
+}
+.mainFooter p{
+    width:92%;
+    margin: 10px auto;
+    color:#fff;
+}
+@media only screen and (min-width-160px) and (max-width-600px)
+{
+    .body{
+        width:90%;
+        font-size:95%;
+    }
+    .mainHeader img{
+        width:100%;
+    }
+    .mainHeader nav{
+        height:160px;
+    }
+    .mainHeader ul{
+        padding-left:0;
+    }
+    .mainHeader nav ul li{
+        width:100%;
+        text-align:center;
+    }
+    .mainHeader nav a:link, .mainHeader nav a:visted{
+        padding:11px 25px;
+        height:18px;
+    }
+    .mainHeader nav a:hover, .mainHeader nav a:active,
+    .mainHeader nav .active a:link, .mainHeader nav .active a:visited{
+        background-color:#CF5C3F;
+        text-shadow:none;
+    }
+    .mainHeader nav ul li a{
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+    .slider{
+     background: url("../img/slider-d_0.jpg");
+    background-size: cover;
+    height: 30%;
+}
+
+}

@@ -1,0 +1,8 @@
+To: bran@gmail.com
+Subject: Your App Confirmation Email
+Date: Fri, 28 Aug 2015 10:22:50 +0200
+From: brandonbruintjies4@gmail.com
+To: bran@gmail.com
+Subject: Your App Confirmation Email
+
+Please, click the link to confirm your registration => http://localhost:8000/application/registration/confirm-email

@@ -1,0 +1,76 @@
+<?php echo $this->doctype(); ?>
+
+
+<?php
+$form = $this->form;
+//$form->setAttribute('action', $this->url('register/default', array('controller' => 'registration', 'action' => 'index')));
+
+$form->prepare();
+$form->get('usr_name')->setAttributes(array(
+     'class'=>'form-control',
+     ));
+
+    $form->get('usr_email')->setAttributes(array(
+    'class'=>'form-control',
+     ));
+     
+      $form->get('usr_password')->setAttributes(array(
+     'class'=>'form-control',
+     ));
+    
+     $form->get('usr_password_confirm')->setAttributes(array(
+     'class'=>'form-control',
+     'placeholder'=>'confirm password'
+     ));
+     
+//      $form->get('captcha')->setAttributes(array(
+//     'class'=>'form-control',
+//     ));
+     $form->get('submit')->setAttributes(array('class'=>'btn btn-primary'));
+ ?>
+
+<div class="row">
+    <div class="col-md-6">
+        <?php
+            echo $this->form()->openTag($form);
+        ?>
+        
+        <div class="form-group" >
+             <?php echo $this->formLabel($form->get('usr_name')); ?>
+             <?php echo $this->formElement($form->get('usr_name')); ?>
+             <?php echo $this->formElementErrors($form->get('usr_name')); ?>
+        </div>
+        
+        <div class="form-group">
+             <?php echo $this->formLabel($form->get('usr_email')); ?>
+             <?php echo $this->formElement($form->get('usr_email')); ?>
+             <?php echo $this->formElementErrors($form->get('usr_email')); ?>
+         </div>
+        
+         <div class="form-group">
+             <?php echo $this->formLabel($form->get('usr_password')); ?>
+             <?php echo $this->formElement($form->get('usr_password')); ?>
+             <?php echo $this->formElementErrors($form->get('usr_password')); ?>
+         </div>
+        
+         <div class="form-group">
+             <?php echo $this->formLabel($form->get('usr_password_confirm')); ?>
+             <?php echo $this->formElement($form->get('usr_password_confirm')); ?>
+             <?php echo $this->formElementErrors($form->get('usr_password_confirm')); ?>
+         </div>
+        
+        <?php echo $this->formElement($form->get('csrf')); ?>
+        
+         <div class="form-group">
+            <?php //echo $this->formRow($form->get('captcha')) ; echo "<br/>"; ?>
+         </div>
+        
+        <div class="form-group">
+            <?php echo $this->formElement($form->get('submit')); echo "<br/>"?>
+        </div>
+             <?php echo $this->form()->closeTag(); ?> 
+        </div>
+</div>
+            
+    </body>
+</html>

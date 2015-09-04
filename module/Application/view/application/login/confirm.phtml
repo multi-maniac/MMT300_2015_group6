@@ -1,0 +1,585 @@
+
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('PPSPTP ' ) ?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                ->prependStylesheet($this->basePath() . '/css/stylesheet.css')
+                ->prependStylesheet($this->basePath() . '/css/responsive.css')
+                ->prependStylesheet($this->basePath() . '/css/slider.min.css')
+        ?>
+
+        <!-- Scripts -->
+             <style type="text/css">
+  body {
+   padding-top: 0 !important;
+   padding-bottom: 0 !important;
+   padding-top: 0 !important;
+   padding-bottom: 0 !important;
+   margin:0 !important;
+   width: 100% !important;
+   -webkit-text-size-adjust: 100% !important;
+   -ms-text-size-adjust: 100% !important;
+   -webkit-font-smoothing: antialiased !important;
+ }
+ .tableContent img {
+   border: 0 !important;
+   display: block !important;
+   outline: none !important;
+ }
+ a{
+  color:#382F2E;
+}
+
+p, h1,h2,ul,ol,li,div{
+  margin:0;
+  padding:0;
+}
+
+h1,h2{
+  font-weight: normal;
+  background:transparent !important;
+  border:none !important;
+}
+
+.contentEditable h2.big,.contentEditable h1.big{
+  font-size: 26px !important;
+}
+
+ .contentEditable h2.bigger,.contentEditable h1.bigger{
+  font-size: 37px !important;
+}
+
+td,table{
+  vertical-align: top;
+}
+td.middle{
+  vertical-align: middle;
+}
+
+a.link1{
+  font-size:13px;
+  color:#27A1E5;
+  line-height: 24px;
+  text-decoration:none;
+}
+a{
+  text-decoration: none;
+}
+
+.link2{
+color:#ffffff;
+border-top:10px solid #27A1E5;
+border-bottom:10px solid #27A1E5;
+border-left:18px solid #27A1E5;
+border-right:18px solid #27A1E5;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+background:#27A1E5;
+}
+
+.link3{
+color:#555555;
+border:1px solid #cccccc;
+padding:10px 18px;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+background:#ffffff;
+}
+
+.link4{
+color:#27A1E5;
+line-height: 24px;
+}
+
+h2,h1{
+line-height: 20px;
+}
+p{
+  font-size: 14px;
+  line-height: 21px;
+  color:#AAAAAA;
+}
+
+.contentEditable li{
+ 
+}
+
+.appart p{
+ 
+}
+.bgItem{
+background: #ffffff;
+}
+.bgBody{
+background: #ffffff;
+}
+
+img { 
+  outline:none; 
+  text-decoration:none; 
+  -ms-interpolation-mode: bicubic;
+  width: auto;
+  max-width: 100%; 
+  clear: both; 
+  display: block;
+  float: none;
+}
+
+</style>
+
+
+<script type="colorScheme" class="swatch active">
+{
+    "name":"Default",
+    "bgBody":"ffffff",
+    "link":"27A1E5",
+    "color":"AAAAAA",
+    "bgItem":"ffffff",
+    "title":"444444"
+}
+</script>
+    </head>
+    <body>
+        <nav>
+            
+            <div class="container">
+                <a href="<?php echo $this->url('home') ?>"><img class="logo" src="/images/logo.png"/></a>
+                <h4 class="reg_log">Welcome!  <?php echo $this->user_email; ?></h4>
+                <div class="clear"/>
+            </div>
+                <div id="nav">
+    <div id="nav_wrapper">
+            <div class="container">
+                <ul class="navigation">
+                    <li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                    <li><a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('About') ?></a>
+                        <ul>
+                            <li class="active"><a href="<?php echo $this->url('howtoknow') ?>"><?php echo $this->translate('How to know') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('comingout') ?>"><?php echo $this->translate('Coming out') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('behappy') ?>"><?php echo $this->translate('Be happy') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('respect') ?>"><?php echo $this->translate('Respect') ?></a></li>
+                            </li>
+                           <li class="active"><a href="<?php echo $this->url('transition') ?>"><?php echo $this->translate('Transition') ?></a></li>
+                            </li>
+                            <li class="active"><a href="<?php echo $this->url('resources') ?>"><?php echo $this->translate('Resources') ?></a></li>
+                            <li class="active"><a href="bootstrap.html">Bootstrap</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    </li>
+              
+                    
+                    <li class="active"><a href="<?php echo $this->url('service') ?>"><?php echo $this->translate('Services') ?></a></li>
+                    <li class="active"><a href="<?php echo $this->url('members') ?>"><?php echo $this->translate('Members') ?></a></li>
+                <li><a href="<?php echo $this->url('contact') ?>"><?php echo $this->translate('Contact') ?></a></li>
+                </ul>
+                <div class="clear"/>
+            </div>
+            </div></div>
+        </nav>
+ 
+
+
+
+<body paddingwidth="0" paddingheight="0" bgcolor="#d1d3d4"  style="padding-top: 0; padding-bottom: 0; padding-top: 0; padding-bottom: 0; background-repeat: repeat; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased;" offset="0" toppadding="0" leftpadding="0">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableContent bgBody" align="center"  style='font-family:Helvetica, sans-serif;'>
+    <!-- =============== START HEADER =============== -->
+    
+  <tr>
+    <td align='center'>
+      <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" >
+      <tr>
+      <td class="bgItem" align="center">
+      <table width="580" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td class='movableContentContainer' align="center">
+            
+            <div class='movableContent'>
+              <table width="580" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr><td height='15'></td></tr>
+                <tr>
+                  <td>
+                    <table width="580" border="0" cellspacing="0" cellpadding="0" align="center">
+                      <tr >
+                        <td width='75' >
+                          <div class='contentEditableContainer contentImageEditable'>
+                            <div class='contentEditable'>
+							<h1 style='margin-left: 195px;'><strong>NEWSLETTER</strong></h1>
+							
+                            </div>
+                          </div>
+                        </td>
+                        <td width='10' ></td>
+                        <td valign="middle" style='vertical-align: middle;'>
+                          <div class='contentEditableContainer contentTextEditable'>
+                            <div class='contentEditable' style='text-align: left;font-weight: light; color:#555555;font-size:26;line-height: 39px;font-family: Helvetica Neue;'>
+                            </div>
+                          </div>
+                        </td>
+                        <td width='10'></td>
+                        <td valign="middle" style='vertical-align: middle;' width='150'>
+                          <div class='contentEditableContainer contentTextEditable'>
+                            <div class='contentEditable' style='text-align: right;'>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr><td height='15'></td></tr>
+                <tr><td ><hr style='height:1px;background:#DDDDDD;border:none;'></td></tr>
+              </table>  
+            </div>  
+            
+      
+        
+<!-- =============== END HEADER =============== -->
+<!-- =============== START BODY =============== -->
+            <div class='movableContent'>
+              <table width="580" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr><td height='0'></td></tr>
+                <tr>
+                  <td>
+                    <div class='contentEditableContainer contentImageEditable'>
+                      <div class='contentEditable' style="text-align: ">
+                        <img src="/images/logo1.png" alt="Logo" width=' height='' data-default="placeholder" >
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>  
+            </div>
+
+            <div class='movableContent'>
+              <table width="580" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr><td height='40'></td></tr>
+                <tr>
+                  <td style='border: 1px solid #EEEEEE; border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px'>
+                    <table width="480" border="0" cellspacing="0" cellpadding="0" align="center">
+                      <tr><td height='25'></td></tr>
+                      <tr>
+                        <td>
+                          <div class='contentEditableContainer contentTextEditable'>
+                            <div class='contentEditable' style='text-align: center;'>
+                              <h2 style="font-size: 20px;">Guide for media participation for Trans* people:</h2>
+                              <br>
+                              <p>The before picture: 
+                                 Media will always ask you for that wretched before picture! I strongly advocate against it.
+								 In the words of Calpernia Adams (see youtube – http://www.youtube.com/watch?v=BOjeZnjKlp0 ) </p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr><td height='24'></td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>  
+            </div>
+
+            <div class='movableContent'>
+              <table width="580" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr><td height='40' colspan="3"></td></tr>
+                <tr>
+                  <td width='252'>
+                    <table width='575' border='0' cellpadding="0" cellspacing="0" align="center">
+                      <tr>
+                        <td>
+                          <div class='contentEditableContainer contentTextEditable'>
+                            <div class='contentEditable' style='text-align: left;'>
+                              <h2 style="font-size: 20px;">Your story as you see it:</h2>
+                              <br>
+                              <p>
+                              Don’t let media lead you into a script that is not of your own life. 
+							  They are also just people and grapple for something familiar. They will do things like say: so you hated your body? 
+							  So your family rejected you? 
+                              Tell your story as it is and fell free to disagree with their summaries.
+							  They will most often appreciate someone who is willing to strongly express their wishes and story.
+
+                              </p>
+                              <br><br>
+                              <br>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td width='75'></td>
+                  <td width='252'>
+                   
+                  </td>
+                </tr>
+              </table>  
+            </div>
+
+            <div class='movableContent'>
+              <table width="580" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr><td height='40'></td></tr>
+                <tr>
+                  <td style='background:#F6F6F6; border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px'>
+                    <table width="480" border="0" cellspacing="0" cellpadding="0" align="center">
+                      <tr><td height='25'></td></tr>
+                      <tr>
+                        <td>
+                          <div class='contentEditableContainer contentTextEditable'>
+                            <div class='contentEditable' style='text-align: center;'>
+                              <h2 style="font-size: 20px;">Talking about your body:</h2>
+                              <br>
+                              <p>
+                                 Let’s get real here. Your body is personal and the things you do with it. 
+								 `Your story as a trans person is just as sensational and beautiful even when you leave out all the surgeries and hormonal stuff. 
+								 Feel free to refuse such talk. Say you would rather talk about your journey and the people in it. 
+								 There is a lot of info in lots of places about surgery. Refer them to me for those details.
+
+                              </p>
+                              <br><br>
+                             
+                              <br>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr><td height='24'></td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>  
+            </div>
+
+            <div class='movableContent'>
+              <table width="580" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr><td height='40' colspan="3"></td></tr>
+                <tr>
+                  <td width='150'>
+                    <div class='contentEditableContainer contentImageEditable'>
+                      <div class='contentEditable'>
+                        <img src="/images/side.png" alt="side image" width='142' height='142' data-default="placeholder" data-max-width="150">
+                      </div>
+                    </div>
+                  </td>
+                  <td width='20'></td>
+                  <td width='410'>
+                    <table width="410" cellpadding="0" cellspacing="0" align="center">
+                      <tr><td height='15'></td></tr>
+                      <tr>
+                        <td>
+                          <div class='contentEditableContainer contentTextEditable'>
+                            <div class='contentEditable' style='text-align: left;'>
+                              <h2 style='font-size:16px;'>A Short Guide to the Amendment of the Sex Status Act 2003</h2>
+                              <br>
+                              <p>Who may apply for the amendment of gender in their ID books?
+
+                                 “.. any person whose sexual characteristics* have been altered by surgical or
+                                  medical treatment resulting in gender reassignment* may apply to the DG of 
+								  NDHA for the alteration of the sex description on his or her birth certificate.”
+                               </p>
+                              <br>
+                              
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr><td height='40' colspan="3"></td></tr>
+                <tr><td colspan="3"><hr style='height:1px;background:#DDDDDD;border:none;' ></td></tr>
+              </table>  
+            </div>
+
+            <div class='movableContent'>
+              <table width="580" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr><td height='40' colspan="3"></td></tr>
+                <tr>
+                  <td width='410'>
+                    <table width="410" cellpadding="0" cellspacing="0" align="center">
+                      <tr><td height='15'></td></tr>
+                      <tr>
+                        <td>
+                          <div class='contentEditableContainer contentTextEditable'>
+                            <div class='contentEditable' style='text-align: left;'>
+                              <h2 style='font-size:16px;'>Definitions in the act:</h2>
+                              <br>
+                              <p>*Gender reassignment: 
+                                  means a process which is undertaken for the purpose of reassigning
+                                  a person's sex by changing physiological or other sexual characteristics, 
+								  and includes any part of such a process...
+								  *Sexual characteristics: 
+                                   ... means primary or secondary sexual characteristics...
+                                 
+                                   *Secondary sexual characteristics 
+                                    means those that develop throughout life and which are dependent upon the hormonal base of the individual person
+
+                                     Section two will explain the process of application.
+
+                                </p>
+                              
+                             
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td width='20'></td>
+                  <td width='150'>
+                    <div class='contentEditableContainer contentImageEditable'>
+                      <div class='contentEditable'>
+                        <img src="/images/side2.png" alt="side image" width='142' height='142' data-default="placeholder" data-max-width="150">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr><td height='40' colspan="3"></td></tr>
+                <tr><td colspan="3"><hr style='height:1px;background:#DDDDDD;border:none;'></td></tr>
+              </table>  
+            </div>
+
+            <div class='movableContent'>
+              <table width="580" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr><td height='40' colspan="3"></td></tr>
+                <tr>
+                  <td width='150'>
+                    <div class='contentEditableContainer contentImageEditable'>
+                      <div class='contentEditable'>
+                        <img src="/images/side3.png" alt="side image" width='142' height='142' data-default="placeholder" data-max-width="150">
+                      </div>
+                    </div>
+                  </td>
+                  <td width='20'></td>
+                  <td width='410'>
+                    <table width="410" cellpadding="0" cellspacing="0" align="center">
+                      <tr><td height='15'></td></tr>
+                      <tr>
+                        <td>
+                          <div class='contentEditableContainer contentTextEditable'>
+                            <div class='contentEditable' style='text-align: left;'>
+                              <h2 style='font-size:16px;' >Feel free to contact us.</h2>
+                              <br>
+                              <p>Please feel free to contact me at the above address if you have any further queries.
+                                We have suggested to our constituents to also include a copy of ACT 49 and the Short Guide to Act 49
+								when approaching you’re for these medical reports.
+</p>
+                              <br>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr><td height='40' colspan="3"></td></tr>
+                <tr><td colspan="3"><hr style='height:1px;background:#DDDDDD;border:none;'></td></tr>
+              </table>  
+            </div>
+
+<!-- =============== END BODY =============== -->
+<!-- =============== START FOOTER =============== -->
+            <div class='movableContent'>
+              <table width="580" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr><td colspan="3" height='48'></td></tr>
+                <tr>
+                  <td width='90'></td>
+                  <td width='400'align='center' style='text-align: center;'>
+                    <table width='400' cellpadding="0" cellspacing="0" align="center">
+                      <tr>
+                        <td>
+                          <div class='contentEditableContainer contentTextEditable'>
+                            <div class='contentEditable' style='text-align: center;color:#AAAAAA;'>
+                              
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td width='90'></td>
+                </tr>
+              </table>  
+            </div>
+
+            <div class='movableContent'>
+              <table width="580" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr><td colspan="3" height='40'></td></tr>
+                <tr>
+                  <td width='195'></td>
+                  <td width='190' align='center' style='text-align: center;'>
+                    <table width='190' cellpadding="0" cellspacing="0" align="center">
+                      <tr>
+                        <td width='40'>
+                          <div class='contentEditableContainer contentFacebookEditable'>
+                            <div class='contentEditable' style='text-align: center;color:#AAAAAA;'>
+                            
+                              <a target = "_blank"href="https://www.facebook.com/pages/Protea-Psychosocial-Project-for-Trans-People/1613032075611085?fref=ts"><img class="facebook" src='/images/facebook.png' width='' height='' onmouseover="this.src='/images/facebookhover.png';" onmouseout="this.src='/images/facebook.png';" /></a>
+                            </div>
+                          </div>
+                        </td>
+                        <td width='10'></td>
+                        <td width='40'>
+                          <div class='contentEditableContainer contentTwitterEditable'>
+                            <div class='contentEditable' style='text-align: center;color:#AAAAAA;'>
+                             <a target = "_blank"href="https://twitter.com/ppsptp"><img class="twitter" src='/images/twitter.png' width='' height='' onmouseover="this.src='/images/twitterhover.png';" onmouseout="this.src='/images/twitter.png';" /></a>
+                            </div>
+                          </div>
+                        </td>
+                        <td width='10'></td>
+                        <td width='40'>
+                          <div class='contentEditableContainer contentImageEditable'>
+                            <div class='contentEditable' style='text-align: center;color:#AAAAAA;'>
+                              <a target = "_blank" href="https://youtube.com"><img class="youtube" src='/images/youtube.png' width='' height='' onmouseover="this.src='/images/youtubehover.png';" onmouseout="this.src='/images/youtube.png';" /></a>
+                            </div>
+                          </div>
+                        </td>
+                        <td width='10'></td>
+                        <td width='40'>
+                          <div class='contentEditableContainer contentImageEditable'>
+                            <div class='contentEditable' style='text-align: center;color:#AAAAAA;'>
+                              <a href="<?php echo $this->url('contact') ?>"><img class="email" src='/images/email.png' width='' height='' onmouseover="this.src='/images/emailhover.png';" onmouseout="this.src='/images/email.png';" /></a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td width='195'></td>
+                </tr>
+                <tr><td colspan="3" height='40'></td></tr>
+              </table>  
+            </div>
+<!-- =============== END FOOTER =============== -->
+          </td>
+        </tr>
+      </table>
+      </td>
+      </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+
+  </body>
+  </html>
+
+
+
